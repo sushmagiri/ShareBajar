@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.sharebajar.MainActivity">
+<TextView
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="(*) Denotes required fields"
+    android:textSize="16sp"
+    android:id="@+id/text"
+    />
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+       android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+android:textColor="#000"
+        android:text="Select Company*"
+        android:id="@+id/tv_comapny"
+        android:layout_below="@+id/text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FB9160"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/tv_comapny"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="First Name *"
+        android:id="@+id/tv_fname"
+        android:layout_below="@+id/spinner1"
+         />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Last Name *"
+        android:id="@+id/tv_lname"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/tv_fname"
+        android:layout_alignStart="@+id/tv_fname" />
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@color/btn_login_bg"
+        android:id="@+id/editText"
+        android:layout_below="@+id/tv_fname"
+        android:layout_alignLeft="@+id/tv_lname"
+        android:layout_alignStart="@+id/tv_lname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@color/btn_login_bg"
+        android:id="@+id/et_lname"
+        android:layout_alignLeft="@+id/tv_lname"
+        android:layout_alignStart="@+id/tv_lname"
+        android:layout_below="@+id/tv_lname"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Application no."
+        android:id="@+id/textView"
+        android:layout_below="@+id/et_lname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@color/btn_login_bg"
+        android:id="@+id/et_applicationno."
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/et_lname"
+        android:layout_alignEnd="@+id/et_lname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Applied Share Kitta"
+        android:id="@+id/tv_appliesharekitta"
+        android:layout_below="@+id/et_applicationno." />
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@color/btn_login_bg"
+        android:id="@+id/editText4"
+
+        android:layout_below="@+id/tv_appliesharekitta"
+        android:layout_alignLeft="@+id/et_lname"
+        android:layout_alignStart="@+id/et_lname"
+        android:layout_alignRight="@+id/et_applicationno."
+        android:layout_alignEnd="@+id/et_applicationno." />
+
+
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:background="@color/colorPrimary"
+        android:drawableRight="@drawable/search"
+        android:id="@+id/bt_search"
+        android:layout_below="@+id/editText4"
+        android:layout_alignRight="@+id/tv_lname"
+        android:layout_alignEnd="@+id/tv_lname" />
+<TableLayout
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/table_layout"
+    android:layout_below="@id/bt_search">
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/table_layout2"
+        android:layout_below="@id/table_layout">
+
+
+</TableLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>

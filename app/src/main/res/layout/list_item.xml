@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company_name:"
+        android:id="@+id/l_cname"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company"
+        android:id="@+id/tv_cname"
+        android:paddingBottom="5dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/l_cname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firstname:"
+        android:id="@+id/l_fname"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/tv_cname"
+        android:layout_alignRight="@+id/l_cname"
+        android:layout_alignEnd="@+id/l_cname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firstname"
+        android:id="@+id/fname"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_below="@+id/l_fname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lastname:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/l_lname"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/fname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lasttname"
+        android:id="@+id/lname"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_below="@+id/l_lname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>
